@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JSON Example</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		let companies = [
+							{
+								"name": "Big Corporation",
+								"numberOfEmployees": 1000,
+								"ceo": "Mary",
+								"rating": 3.6
+							},
+
+							{
+								name: "Small Corporation",
+								numberOfEmployees: 50,
+								ceo: "null",
+								rating: 4.0
+							}
+						]
+						// In JSON you need to have the "" around the keys while in a JS object it's not mandatory
+		console.log(companies)
+
+		s_companies = JSON.stringify(companies)
+		console.log(s_companies)
+
+		console.log(JSON.parse(s_companies))
+
+		// "cmd+opt+i" to open the console
+
+		console.log(JSON.parse(s_companies)[0].name)
+		console.log(JSON.parse(s_companies)[1].name)
+
+		// fetch('data.json').then((resp) => resp.json())
+		// 	.then((json) => {console.log(json.address.city)})
+
+		// fetch('data.json').then((resp) => resp.json())
+		// 	.then((json) => {console.log(json.shoppingList[0])})
+
+	</script>
+
+	<ul id="users"></ul>
+
+	<script type="text/javascript">
+
+		fetch('https://jsonplaceholder.typicode.com/users').then((resp) => resp.json())
+			.then((json) => {
+								var users = json;
+								var output = "";
+								for(var i = 0; i < users.length; i++){
+									output += "<li>" + users[i].name + "</li>";
+								}
+								document.getElementById("users").innerHTML = output;
+							})
+								
+	</script>
+
+</body>
+</html>

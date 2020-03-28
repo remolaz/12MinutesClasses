@@ -1,0 +1,22 @@
+{
+	"name":"Kyle",
+	"favoriteNumber": 3,
+	"isProgrammer": true,
+	"hobbies": ["football", "basketball"],
+	"frineds": [ // the friends value is an array of user objects
+
+			{"name":"Albert",
+			"favoriteNumber": 8,
+			"isProgrammer": true,
+			"hobbies": ["football", "bowling"],
+			"frineds":null},
+
+			{"name":"Mark",
+			"favoriteNumber": 1,
+			"isProgrammer": true,
+			"hobbies": ["bowling"],
+			"frineds":null}
+	]
+}
+
+// In JSON you need to have the "" around the keys while in a JS object it's not mandatory

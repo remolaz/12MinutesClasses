@@ -1,0 +1,89 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+</head>
+<body>
+
+	<p>
+		JavaScript is a client-side scripting language. The user sends an HTTP request to the server and the server send back an html file to the user that will include the javascript code. The user can read the javascript code. The user browser then executes the code when processing the page.
+	</p>
+	<p>
+		This is in contrast with a server-side scripting language (PHP): in this case the server won't send the code to the user but just the output of teh code. The PHP code is executed by the server.
+	</p>
+	<p>
+		Javascript is written inside an html file.
+	</p>
+
+	<script type="text/javascript"> /* You put JavaScript inside a "script" tag */ 
+		document.write("Hello World<br/>"); // this is a statement
+		var myVariable; // variable declaration doesn't need to define the variable type
+		myVariable = 5;
+		myVariable1 = "Ciao";
+		myVariable2 = false;
+
+		var words = "This is";
+		var morewords = " a sentence";
+		var sentence = words + morewords;
+		document.write(sentence);document.write("<br/>");
+
+		var num1 = 3;
+		var num2 = 5;
+		var tot = num1 + num2;
+		document.write(tot);
+		document.write("<br/>");document.write("<br/>");		
+
+		var tot = num1++;
+		document.write(tot);document.write("<br/>");
+		document.write(num1);document.write("<br/>");document.write("<br/>");
+
+		var tot = ++num2; // This will change also num2
+		document.write(tot);document.write("<br/>");
+		document.write(num2);document.write("<br/>");document.write("<br/>");		
+		 // STRINGS are sored as Objects
+		 // Objects have properties and methods:
+		 // a property returns an information about the object
+		 // a method takes an input, elaborates it and returns the answer
+		 var alpha = "ABCDEF"; //Strings have properties like length
+		 var length = alpha.length;
+		 var result = alpha.substring(3,5);
+
+		 // Construct Arrays
+		 var arr = new Array(7);
+		 arr[0] = "cat";
+		 arr[1] = 9;
+		 arr[2] = true;
+
+		 var arr1 = new Array("cat", 53, true);
+
+		 var arr2 = ["cat", 53, true];
+
+		 // Functions
+
+		 function sayHello(who){
+		 	document.write("Hello " + who);
+		 }
+
+		 sayHello("Bob");document.write("<br/>");
+		 sayHello("Mary");document.write("<br/>");document.write("<br/>");
+
+		 // Flow STATEMENT
+		 var b = 5;
+		 if (b != 0){
+		 	alert("Hello Remo!"); // JavaScript window
+		 } else{
+
+		 }
+
+		 // Loop
+
+		 for (i=0;i<5;i++){
+		 	document.write("This is the iteration " + i + "<br/>");
+		 }
+
+	</script>
+
+</body>
+</html>

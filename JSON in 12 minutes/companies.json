@@ -1,0 +1,17 @@
+[
+	{
+		"name": "Big Corporation",
+		"numberOfEmployees": 1000,
+		"ceo": "Mary",
+		"rating": 3.6
+	},
+
+	{
+		"name": "Small Corporation",
+		"numberOfEmployees": 50,
+		"ceo": "null",
+		"rating": 4.0
+	}
+]
+
+// In JSON you need to have the "" around the keys while in a JS object it's not mandatory

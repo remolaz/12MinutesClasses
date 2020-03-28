@@ -1,0 +1,66 @@
+<!-- HTML is not a programming language, it is a markup language. It defines the structure of a webpage, it tells the browser shich parts of the webpage is the heading or an hyperlink for example. HTML and CSS are enough to write a webpage. Javascript is a programming language that adds dynamic features to a webpage.-->
+
+<!DOCTYPE html> <!-- used to say the HTML version we are using-->
+<html>
+
+	<head>
+		<title></title> 
+	</head>
+
+	<body>
+		<!-- the a tag is for hyperlinks-->
+		<a href="http://google.com">Click here!</a>
+
+		<ul>
+			<li>Item 1</li> <!-- "li" are the elements of the list-->
+			<li>Item 2</li>
+			<li>Item 3</li>
+		</ul>
+
+		<ol>
+			<li>Item 1</li> <!-- "li" are the elements of the list-->
+			<li>Item 2</li>
+			<li>Item 3</li>
+		</ol>
+
+		<img src="WebArt.png" width=500px height="200" alt="Description of Image" /> <!-- or width="200"-->
+
+		<!-- div tags are used to group elements inside the html webpage, they are like invisible boxes. Usually a line break appears before and after a div tag, but this can be changed in the css file-->
+
+		<div>
+			<h1 id="header">Welcome to my WebSite!</h1>
+			<!-- id is unique-->
+		</div>
+
+		<div class="RemoClass">
+			<!-- we can give the same class to different attributes-->
+			<h2 class="RemoClass">HomePage</h2>
+			<p>I hope you like it. :)</p>
+		</div>
+
+		<div>
+			Copyright &copy; 2013 Jake Wright <! search in google for HTML entities to find more useful code like &copy>
+		</div>
+
+		<!-- span tag is used to create logical grouping on a page. The difference with dic tag is that span does not include like breaks at the beginning and at the end of it-->
+		<br/>
+		Welcome to my <span class="RedTextClass">cool</span> website!<br/><br/>
+		Welcome to my <div class="RedTextClass">cool</div> website!
+
+		<!-- Elements Overlapping is not permitted
+			I can't do:
+				<div>
+					<p>
+				</div>
+					</p>
+		 -->
+		 <div>
+	
+			<a href="http://google.com">
+				<img src="WebArt.png" width=50% height=50% alt="Description of Image with hyperlink" />
+			</a>
+		</div>
+
+	</body>
+
+</html>

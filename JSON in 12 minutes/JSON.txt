@@ -1,0 +1,89 @@
+JSON: JavaScript Object Notation: it's a data interchange format.
+
+What are JSON, XML, and YAML? 
+They are Data Representation Formats that can be used to store structured data.
+
+XML (Extensible Markup Language) is often used in configuration and preference files, like those used for the Eclipse IDE. Most Web browsers have XML viewers, although XML is designed for structured data, making it a bit like looking at the internals of a database.
+
+JavaScript Object Notation (JSON) is used with JavaScript. It is familiar to Web developers that use it for client/server communication.
+
+YAML stands for YAML Ain’t Markup Language. It uses line and whitespace delimiters instead of explicitly marked blocks that could span one or more lines like XML and JSON. This approach is used in many programming languages, such as Python.
+
+In the develooper tools, you can open the console "cmd-opt-i"
+
+A JavaScript Object can be defined as:
+
+var obj = {
+	nome:"Jon",
+	age:14
+}
+
+the syntax of the object is a series of key value pairs separated by colons
+and each pair is separated by a comma. The whole thing is whithin curly brackets.
+
+The object we created is a JavaScript object.
+
+To transfer the object, we can turn it into a JSON string, that is transferable over platfomrs. To create a JSON string we can use the JavaScript built in function called: JSON.stringify().
+
+So we can pass the JS object like this:
+
+JSON.stringify(
+				{	nome:"Jon",
+					age:14
+				}	
+			  )
+
+This will create the JSON string: "{"nome":"Jon","age":14}"
+
+To convert the JSON string to a JavaScript object we can use the function: 
+JSON.parse()
+
+JSON.parse('{"nome":"Jon","age":14}') // Do not use double quotes sourroundging the JSON string, only quotes!
+
+JSON is really useful to pass data between back-ends and fron-ends. 
+
+JS array: var c = [{1, "Arya", true, {}] // It's a JS array that contains number, string, boolean and a JS object.
+
+Also c can be converted in JSON string:
+
+JSON.stringify([1, "Arya", true, {}])
+we will obtain: "[1,"Arya",true,{}]"
+
+Unlike JS objects JSON can't hold functions:
+
+var g = {
+	name : "Eddard",
+	myName : function(){return this, name}
+}
+
+If I write in the console: g.myName()
+I get "Eddard"
+
+If I pass in the console:
+
+JSON.stringify( {
+	name : "Eddard",
+	myName : function(){return this, name}
+} )
+
+I get: "{"name":"Eddard"}" the function was not parsed!
+
+With JASON you can code data in any language!
+
+JSON supports:
+strings "Remo" "Clizia"
+numbers 70 90
+booleans true false
+null null
+arrays [1, true, "remo"]
+objects {"key":"value"} {"age":30}
+arrays of objects [{},{},{}] [{},{},{}]
+
+Then I'm creating a .json file. The .json file can contain for example:
+5 or "Remo" or objects {} or many objects {} {}
+
+I create a "user.json" file.
+
+Another example is the file "companies.json"
+
+NOTE: for objects JS doesn't need double quotes for keys (but you can still put it!), but JSON needs it!!

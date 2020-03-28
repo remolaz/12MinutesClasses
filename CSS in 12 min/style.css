@@ -1,0 +1,69 @@
+body { /* Here I'm targeting the body of the HTML and I don't need */
+	background-color: #EEE; /* becasue its EEEEEE I can also write EEE */ 
+	font-family: Helvetica, Arial, sans-serif; /* I specify many for backup in case those fonts are not available */
+}
+
+/* Here I target the a tag that is used for links */
+
+a {
+	text-decoration: none; /* Not underlined */
+	color: red;
+}
+
+h1, h2, h3 {
+	margin: 0;
+}
+
+#container {
+	background-color: white;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#header { /* I target an element with the id header */
+	background-color: #66CCFF; /* Hex code starts with # */
+	color: white;
+	text=align: center;
+	padding: 10px;
+}
+
+#content {
+	padding: 10px; /* This is like to write padding: 10px 10px 10px 10px; */
+}
+
+#nav {
+	width: 180px;
+	float: left;
+}
+
+#nav ul{ /* Unordered list */
+	list-style-type: none; /* removes the bullet points */
+	padding: 0; /* remove the space */
+}
+
+.selected{}
+/* 
+	"#" is for targeting ID, "." is for targeting classes 
+
+	#header, .sidebar { // This target both the id "header" and the class "sidebar"
+		color:blue;
+	}
+*/
+
+#nav .selected{ /* This target the "selected" class inside the object with ID "nav" */
+	font-weight: bold;
+}
+
+#main {
+	width: 600px;
+	float: right;
+}
+
+#footer {
+	clear: both; /* This says to fix both the floating elements before proceeding with this */
+	padding: 10px;
+	background-color: #999;
+	color: white;
+	text-align: right;
+}
